@@ -19,9 +19,4 @@ function welcomMessage() {
     alert("Welcome to new world, " + localStorage.getItem('name'))
 }
 
-if(!localStorage.getItem('name')) {
-    setUserName();
-} else {
-    let storedName = localStorage.getItem('name');
-    welcomeMessage();
-}
+setUserName();
