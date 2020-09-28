@@ -19,4 +19,6 @@ function welcomMessage() {
     alert("Welcome to new world, " + localStorage.getItem('name'))
 }
 
-setUserName();
+if (!localStorage.getItem('name')){
+    setUserName();
+}
