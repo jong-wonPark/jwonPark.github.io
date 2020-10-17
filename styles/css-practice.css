@@ -10,11 +10,19 @@ body {
     border: 2px solid black;
 }
 
+@media (min-width: 50em) {
+  body {
+    background-color: lightpink;
+  }
+}
+
 h1 {
     color: brown;
     text-align: center;
 }
-
+h1 + p {
+  font-size: 200%;
+}
 li {
     list-style-type: none;
 }
